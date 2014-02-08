@@ -4,10 +4,11 @@ window.PhotoGallery = {
   Views: {},
   Routers: {},
   initialize: function() {
-    alert('Hello from Backbone!');
+    // alert('Hello from Backbone!');
     var router = new PhotoGallery.Routers.Router({
-      $rootEl: $("#content");
+      $rootEl: $("#content")
     });
+    Backbone.history.start();
   }
 };
 

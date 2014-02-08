@@ -4,7 +4,14 @@ PhotoGallery.Routers.Router = Backbone.Router.extend({
   },
   
   routes: {
-    "": ""
+    "": "fetchPhotos"
+  },
+  
+  fetchPhotos: function () {
+    $.ajax({
+      type: "GET",
+      url: "https://api.instagram.com"
+    })
   },
   
   _swapView: function (view) {
