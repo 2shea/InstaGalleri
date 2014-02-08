@@ -1,0 +1,18 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: PhotoGallery_development
+  pool: 5
+  host: localhost
+  
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: PhotoGallery_test
+  pool: 5
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: PhotoGallery_production
+  pool: 5
