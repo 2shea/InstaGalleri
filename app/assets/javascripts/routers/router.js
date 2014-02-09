@@ -8,10 +8,10 @@ PhotoGallery.Routers.Router = Backbone.Router.extend({
   },
   
   fetchPhotos: function () {
-    $.ajax({
-      type: "GET",
-      url: "https://api.instagram.com"
-    })
+    // $.ajax({
+  //     type: "GET",
+  //     url: "https://api.instagram.com"
+  //   })
   },
   
   _swapView: function (view) {
