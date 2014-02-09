@@ -4,14 +4,22 @@ window.PhotoGallery = {
   Views: {},
   Routers: {},
   initialize: function() {
-    // alert('Hello from Backbone!');
-    var router = new PhotoGallery.Routers.Router({
-      $rootEl: $("#content")
-    });
-    Backbone.history.start();
+    PhotoGallery.Collections.photos = new PhotoGallery.Collections.Photos();
+    PhotoGallery.Collections.photos.fetch({
+      success: function () {
+        var router = new PhotoGallery.Routers.Router({
+          $rootEl: $("#content")
+        });
+        Backbone.history.start();
+      }
+    })
   }
 };
 
 $(document).ready(function(){
   PhotoGallery.initialize();
 });
+
+
+
+

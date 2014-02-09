@@ -17,5 +17,9 @@ end
 gem 'jquery-rails'
 gem 'jbuilder'
 gem 'ejs'
-
 gem 'figaro'
+
+gem 'rest-client'
+require 'rest-client'
+gem 'addressable'
+require 'addressable/uri'
