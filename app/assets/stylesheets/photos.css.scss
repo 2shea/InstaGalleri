@@ -3,7 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .body {
-  background: lightblue;
+  background-color: #6d695c;
+  background-image:
+  repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  background-size: 70px 120px;
+/*    background: lightseagreen;*/
+/*  background: lightgrey;*/
 }
 
 .circular {
@@ -15,14 +23,10 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-/*  opacity: 0.5;*/
   position: relative;
 }
 
 .float {
-/*  transform: translate(350px, 0);
-  -webkit-transform: translate(350px, 0);
-  -moz-transform: translate(350px, 0);*/
   transition: all 3s ease-in-out;
   -webkit-transition: all 3s ease-in-out;
   -moz-transition: all 3s ease-in-out;
