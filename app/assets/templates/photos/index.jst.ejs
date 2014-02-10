@@ -1,0 +1,5 @@
+<% photos.each(function (photo) { %>
+    <img class="circular float" src=<%= photo.get('url') %>>
+    <% photo.get('caption') %>
+<% }) %>
+

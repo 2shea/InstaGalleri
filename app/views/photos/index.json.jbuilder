@@ -1,6 +1,6 @@
 json.array! @photo_data['data'] do |photo|
-  next unless photo['images']['standard_resolution']['url'] &&
-    photo['caption']
-  json.url photo['images']['standard_resolution']['url']
-  json.caption photo['caption']['text']
+  json.url photo['images']['thumbnail']['url']
+  if photo['caption']
+    json.caption photo['caption']['text']
+  end
 end

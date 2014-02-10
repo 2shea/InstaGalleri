@@ -4,21 +4,28 @@ PhotoGallery.Routers.Router = Backbone.Router.extend({
   },
   
   routes: {
-    "": "fetchPhotos"
+    "": "photosView"
   },
   
-  fetchPhotos: function () {
-    console.log(PhotoGallery.Collections.photos);
-    
-    // $.ajax({
-  //     type: "GET",
-  //     url: "https://api.instagram.com/v1/media/search?lat=" + lat + "&lng=" + 
-  //     lng + "&client_id=" + INSTAGRAM_CLIENT_ID,
-  //     success: function (data) {
-  //       console.log(data)
-  //     }
-  //   })
+  photosView: function () {
+    var view = new PhotoGallery.Views.PhotosView({
+      collection: PhotoGallery.Collections.photos
+    })
+    this._swapView(view);
+    // this.photosFloat();
   },
+  
+  // photosFloat: function () {
+  //  setInterval(function () {
+  //     $(".float").each(function (i, el) {
+  //       var randX = Math.floor(Math.random()*800),
+  //           randY = Math.floor(Math.random()*800);
+  //           
+  //       $(el).css({"transform":"translate(" + randX + "px," + randY + "px)"})
+  //       $(el).addClass("overlap")
+  //     })
+  //   }, 5000);
+  // },
   
   _swapView: function (view) {
     this._currentView && this._currentView.remove();

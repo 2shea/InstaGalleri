@@ -13,6 +13,5 @@ class PhotosController < ApplicationController
     ).to_s
     
     @photo_data = JSON.parse(RestClient.get(url))
-    p @photo_data['data']
   end
 end
