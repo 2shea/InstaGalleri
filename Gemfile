@@ -20,5 +20,5 @@ gem 'ejs'
 gem 'figaro'
 
 gem 'rest-client'
-gem 'addressable', require 'addressable/uri'
+gem 'addressable', require => 'addressable/uri'
 
