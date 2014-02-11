@@ -1,18 +1,46 @@
+<div class="header-container">
+  <h1 class="location-header"><%= location %></h1>
+  
+  <select class="location-select dropdown">
+    <option selected="selected">--Choose New Location--</option>
+    <option value="San Francisco">San Francisco</option>
+    <option value="New York">New York</option>
+    <option value="Los Angeles">Los Angeles</option>
+    <option value="Las Vegas">Las Vegas</option>
+    <option value="Sydney">Sydney</option>
+    <option value="Tokyo">Tokyo</option>
+    <option value="Moscow">Moscow</option>
+    <option value="Sao Paulo">Sao Paulo</option>
+    <option value="Rio de Janeiro">Rio de Janeiro</option>
+    <option value="London">London</option>
+    <option value="Bangkok">Bangkok</option>
+    <option value="Cape Town">Cape Town</option>
+    <option value="Disneyland">Disneyland</option>
+    <option value="Dodger Stadium">Dodger Stadium</option>
+    <option value="Pyramids of Giza">Pyramids of Giza</option>
+    <option value="Eiffel Tower">Eiffel Tower</option>
+    <option value="Golden Gate Bridge">Golden Gate Bridge</option>
+    <option value="Times Square">Times Square</option>
+    <option value="Sydney Opera House">Sydney Opera House</option>
+    <option value="Bellagio Fountains">Bellagio Fountains</option>
+    <option value="Taj Mahal">Taj Mahal</option>
+    <option value="St. Basil's Cathedral">St. Basil's Cathedral</option>
+    <option value="Santorini">Santorini</option>
+    <option value="Machu Picchu">Machu Picchu</option>
+    <option value="Tower of Pisa">Tower of Pisa</option>
+    <option value="Mecca">Mecca</option>
+    <option value="Hagia Sophia">Hagia Sophia</option>
+    <option value="Angkor Wat">Angkor Wat</option>
+    <option value="Vatican City">Vatican City</option>
+    <option value="Forbidden City">Forbidden City</option>
+    <option value="Temple of Besakih">Temple of Besakih</option>
+    <option value="Cut Bank">Cut Bank, Montana</option>
+  </select>
+</div>
+
+
 <% photos.each(function (photo) { %>
     <img class="circular float" src=<%= photo.get('url') %>>
     <% photo.get('caption') %>
 <% }) %>
 
-<select class="location-select">
-  <option data-latitude="122" value="San Francisco">San Francisco</option>
-  <option data-latitude="122" value="New York">New York</option>
-  <option data-latitude="122" value="Los Angeles">Los Angeles</option>
-  <option data-latitude="122" value="Las Vegas">Las Vegas</option>
-  <option data-latitude="122" value="Sydney">Sydney</option>
-  <option data-latitude="122" value="Tokyo">Tokyo</option>
-  <option data-latitude="122" value="Moscow">Moscow</option>
-  <option data-latitude="122" value="Sao Paulo">Sao Paulo</option>
-  <option data-latitude="122" value="Rio de Janeiro">Rio de Janeiro</option>
-  <option data-latitude="122" value="London">London</option>
-  <option data-latitude="122" value="Bangkok">Bangkok</option>
-</select>
