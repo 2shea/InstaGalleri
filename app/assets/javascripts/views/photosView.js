@@ -22,7 +22,7 @@ PhotoGallery.Views.PhotosView = Backbone.View.extend({
       "London": {"lat":"51.5", "lng":"-0.13"},
       "Bangkok": {"lat":"13.73", "lng":"100.52"},
       "Cape Town": {"lat":"-33.92", "lng":"18.42"},
-      "Disneyland": {"lat":"33.81", "lng":"-117.919"},
+      "Disney World": {"lat":"33.81", "lng":"-117.919"},
       "Dodger Stadium": {"lat":"34.07", "lng":"-118.24"},
       "Pyramids of Giza": {"lat":"29.976", "lng":"31.131"},
       "Eiffel Tower": {"lat":"48.858", "lng":"2.29"},
