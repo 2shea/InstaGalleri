@@ -22,3 +22,8 @@ gem 'figaro'
 gem 'rest-client'
 gem 'addressable', :require => 'addressable/uri'
 
+group :development, :test do
+  gem 'jasmine'
+  gem 'jasmine-jquery-rails'
+end
+
