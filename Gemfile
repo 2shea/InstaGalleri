@@ -27,3 +27,5 @@ group :development, :test do
   gem 'jasmine-jquery-rails'
 end
 
+gem 'newrelic_rpm'
+
