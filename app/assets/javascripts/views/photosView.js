@@ -8,7 +8,9 @@ PhotoGallery.Views.PhotosView = Backbone.View.extend({
     });
     
     this.listenTo(this.collection, 'add', this.render);
-    this.currentLocation = "San Francisco"
+    
+    this.currentLocation = "San Francisco";
+    
     this.locations = {
       "San Francisco": {"lat":"37.77", "lng":"-122.42"},
       "New York": {"lat":"40.7", "lng":"-74"},
@@ -46,7 +48,8 @@ PhotoGallery.Views.PhotosView = Backbone.View.extend({
   },
   
   events: {
-    'mouseover .circular': 'floatPhoto'
+    'mouseover .circular': 'floatPhoto',
+    'click .circular': 'viewPhoto'
   },
   
   template: JST['photos/index'],
@@ -69,6 +72,12 @@ PhotoGallery.Views.PhotosView = Backbone.View.extend({
     setTimeout(function () {
       $(event.target).css({"transform":"translate(" + pos[0] + "px," + pos[1] + "px)"})
     }, 3000)
+  },
+  
+  viewPhoto: function (event) {
+    $(".circular").removeClass("front");
+    $(event.target).addClass("front");
+    $(event.target).css({"transform":"scale(2,2)"})
   },
   
   changeLocation: function (newLocation) {

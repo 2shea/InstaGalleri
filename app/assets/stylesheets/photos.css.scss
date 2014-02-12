@@ -35,6 +35,11 @@
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   position: relative;
+  z-index: 1;
+}
+
+.front {
+  z-index: 5;
 }
 
 .float {
