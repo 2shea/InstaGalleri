@@ -43,7 +43,9 @@ PhotoGallery.Views.PhotosView = Backbone.View.extend({
       "Vatican City": {"lat":"41.90", "lng":"12.45"},
       "Forbidden City": {"lat":"39.91", "lng":"116.397"},
       "Temple of Besakih":{"lat":"-8.37", "lng":"115.45"},
-      "Cut Bank": {"lat":"48.63", "lng":"-112.32"}
+      "Cut Bank": {"lat":"48.63", "lng":"-112.32"},
+      "Cabo San Lucas": {"lat":"22.89", "lng":"-109.92"},
+      "Siam Paragon": {"lat":"13.75", "lng":"100.53"}
     }
   },
   
